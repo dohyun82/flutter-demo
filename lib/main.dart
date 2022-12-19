@@ -14,11 +14,42 @@ void main() {
     /// Material 위젯을 사용하기 위해 MaterialApp 으로 실행한다.
     const MaterialApp(
       title: 'My app',
-      home: SafeArea(
-        child: MyScaffold(),
-      ),
+      home: TutorialHome(),
     ),
   );
+}
+
+class TutorialHome extends StatelessWidget {
+  const TutorialHome({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        leading: const IconButton(
+          onPressed: null,
+          icon: Icon(Icons.menu),
+          tooltip: 'Navigation Menu',
+        ),
+        title: const Text('Example title'),
+        actions: const [
+          IconButton(
+            onPressed: null,
+            icon: Icon(Icons.search),
+            tooltip: 'Search',
+          ),
+        ],
+      ),
+      body: const Center(
+        child: Text('Hello, world!'),
+      ),
+      floatingActionButton: const FloatingActionButton(
+        onPressed: null,
+        tooltip: 'Add',
+        child: Icon(Icons.add),
+      ),
+    );
+  }
 }
 
 class MyAppBar extends StatelessWidget {
