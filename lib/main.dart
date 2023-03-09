@@ -1,4 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/ui/Home.dart';
+import 'package:get/get.dart';
+
+
+void main() => runApp(const GetMaterialApp(home: Home()));
+
 
 ///
 /// Introduction to widgets
@@ -8,9 +14,9 @@ import 'package:flutter/material.dart';
 /// 상태관리 여부에 따라, StatelessWidget 또는 StatefulWidget 상속한다.
 /// 위젯 주 작업은 하위 레벨 위젯의 관점에서 기술하는 build() 함수를 구현하는 것이다.
 ///
-void main() {
+// void main() {
   /// runApp 함수는 주어진 위젯을 가져와서 루트로 만든다.
-  runApp(const MyApp2());
+  // runApp(const MyApp2());
   // runApp(
   //   /// Material 위젯을 사용하기 위해 MaterialApp 으로 실행한다.
   //   const MaterialApp(
@@ -27,7 +33,7 @@ void main() {
   //     ),
   //   ),
   // );
-}
+// }
 
 class MyApp2 extends StatelessWidget {
   const MyApp2({Key? key}) : super(key: key);
