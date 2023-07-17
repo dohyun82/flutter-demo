@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/ui/StateManagement.dart';
 import 'package:go_router/go_router.dart';
+import 'package:provider/provider.dart';
 
 /// Introduction to widgets
 // void main() {
@@ -32,13 +34,23 @@ import 'package:go_router/go_router.dart';
 // }
 
 /// Navigation and routing
+// void main() {
+// runApp(MaterialApp(
+//   title: 'Navigation & Routing',
+//   home: NavigationDemo(),
+//   routes: {
+//     '/': (context) => NavigationDemo(),
+//     '/details': (context) => SongScreen()
+//   },
+// ));
+// }
+
+/// State Management
 void main() {
-  // runApp(MaterialApp(
-  //   title: 'Navigation & Routing',
-  //   home: NavigationDemo(),
-  //   routes: {
-  //     '/': (context) => NavigationDemo(),
-  //     '/details': (context) => SongScreen()
-  //   },
-  // ));
+  runApp(
+    const MaterialApp(
+      title: "상태관리",
+      home: MyApp(),
+    ),
+  );
 }

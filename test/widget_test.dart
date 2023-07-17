@@ -6,6 +6,7 @@
 // tree, read text, and verify that the values of widget properties are correct.
 
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/ui/StateManagement.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:flutter_demo/main.dart';
@@ -26,5 +27,16 @@ void main() {
     // Verify that our counter has incremented.
     expect(find.text('0'), findsNothing);
     expect(find.text('1'), findsOneWidget);
+  });
+
+  test('adding item increases total cost', () {
+    final cart = CartModel();
+    final startingPrice = cart.totalPrice;
+    var i = 0;
+    cart.addListener(() {
+      expect(cart.totalPrice, greaterThan(startingPrice));
+    });
+    cart.add(Item('Dash'));
+    expect(i, 1);
   });
 }
