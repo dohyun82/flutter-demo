@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/ui/Animation.dart';
-import 'package:flutter_demo/ui/IntroductionToWidgets.dart';
-import 'package:flutter_demo/ui/Tutorial.dart';
+import 'package:go_router/go_router.dart';
 
 /// Introduction to widgets
 // void main() {
@@ -24,11 +22,23 @@ import 'package:flutter_demo/ui/Tutorial.dart';
 // void main() => runApp(MyApp());
 
 /// Introduction to animations
+// void main() {
+//   runApp(
+//     const MaterialApp(
+//       title: 'Animation',
+//       home: AnimatedContainerDemo(),
+//     ),
+//   );
+// }
+
+/// Navigation and routing
 void main() {
-  runApp(
-    const MaterialApp(
-      title: 'Animation',
-      home: AnimatedContainerDemo(),
-    ),
-  );
+  // runApp(MaterialApp(
+  //   title: 'Navigation & Routing',
+  //   home: NavigationDemo(),
+  //   routes: {
+  //     '/': (context) => NavigationDemo(),
+  //     '/details': (context) => SongScreen()
+  //   },
+  // ));
 }
