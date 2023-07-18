@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/ui/JsonSerialization.dart';
 import 'package:flutter_demo/ui/StateManagement.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
@@ -46,11 +47,21 @@ import 'package:provider/provider.dart';
 // }
 
 /// State Management
+// void main() {
+//   runApp(
+//     const MaterialApp(
+//       title: "상태관리",
+//       home: MyApp(),
+//     ),
+//   );
+// }
+
+/// JSON and serialization
 void main() {
   runApp(
     const MaterialApp(
-      title: "상태관리",
-      home: MyApp(),
+      title: "JSON Serialization",
+      home: MyJsonDemo(),
     ),
   );
 }
