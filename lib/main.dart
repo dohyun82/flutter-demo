@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/ui/AdvancedUI.dart';
 import 'package:flutter_demo/ui/JsonSerialization.dart';
 import 'package:flutter_demo/ui/StateManagement.dart';
 import 'package:go_router/go_router.dart';
@@ -57,11 +58,21 @@ import 'package:provider/provider.dart';
 // }
 
 /// JSON and serialization
+// void main() {
+//   runApp(
+//     const MaterialApp(
+//       title: "JSON Serialization",
+//       home: MyJsonDemo(),
+//     ),
+//   );
+// }
+
+/// Advanced UI
 void main() {
   runApp(
     const MaterialApp(
-      title: "JSON Serialization",
-      home: MyJsonDemo(),
+      title: "Advanced UI",
+      home: MyAdvancedUIDemo(),
     ),
   );
 }
