@@ -10,11 +10,22 @@ import 'package:provider/provider.dart';
 
 /// User interface
 
-// non 머티리얼 앱
+// 위젯 사이징
 void main() {
   debugPaintSizeEnabled = true;
-  runApp(const NonMaterialDemo());
+  runApp(
+    MaterialApp(
+      title: "위젯 크기",
+      home: SizingWidgetsDemo(),
+    ),
+  );
 }
+
+// non 머티리얼 앱
+// void main() {
+//   debugPaintSizeEnabled = true;
+//   runApp(const NonMaterialDemo());
+// }
 
 // 머티리얼 앱
 // void main() {
