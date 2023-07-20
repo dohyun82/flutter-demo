@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter_demo/ui/AdvancedUI.dart';
+import 'package:flutter_demo/ui/BuildingLayouts.dart';
 import 'package:flutter_demo/ui/IntroductionToWidgets.dart';
 import 'package:flutter_demo/ui/JsonSerialization.dart';
 import 'package:flutter_demo/ui/StateManagement.dart';
@@ -8,20 +10,42 @@ import 'package:provider/provider.dart';
 
 /// User interface
 
+// non 머티리얼 앱
 void main() {
-  runApp(
-    const MaterialApp(
-      title: '쇼핑 앱',
-      home: ShoppingList(
-        products: [
-          Product(name: 'Eggs'),
-          Product(name: 'Flour'),
-          Product(name: 'Chocolate chips'),
-        ],
-      ),
-    ),
-  );
+  debugPaintSizeEnabled = true;
+  runApp(const NonMaterialDemo());
 }
+
+// 머티리얼 앱
+// void main() {
+//   runApp(
+//     MaterialApp(
+//       title: '레이아웃',
+//       home: Scaffold(
+//         appBar: AppBar(
+//           title: const Text('레이아웃'),
+//         ),
+//         body: const MyLayoutDemo(),
+//       ),
+//     ),
+//   );
+// }
+
+// void main() {
+//   debugPaintSizeEnabled = true;
+//   runApp(
+//     const MaterialApp(
+//       title: '쇼핑 앱',
+//       home: ShoppingList(
+//         products: [
+//           Product(name: 'Eggs'),
+//           Product(name: 'Flour'),
+//           Product(name: 'Chocolate chips'),
+//         ],
+//       ),
+//     ),
+//   );
+// }
 
 // void main() {
 //   runApp(
