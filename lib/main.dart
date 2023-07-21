@@ -15,10 +15,19 @@ import 'package:provider/provider.dart';
 void main() {
   runApp(
     const MaterialApp(
-      home: ContainerDemo(),
+      home: GridViewDemo(),
     ),
   );
 }
+
+// Container
+// void main() {
+//   runApp(
+//     const MaterialApp(
+//       home: ContainerDemo(),
+//     ),
+//   );
+// }
 
 // 위젯 사이징
 // void main() {
