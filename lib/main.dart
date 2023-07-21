@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_demo/ui/AdvancedUI.dart';
 import 'package:flutter_demo/ui/BuildingLayouts.dart';
+import 'package:flutter_demo/ui/CommonLayoutWidgets.dart';
 import 'package:flutter_demo/ui/IntroductionToWidgets.dart';
 import 'package:flutter_demo/ui/JsonSerialization.dart';
 import 'package:flutter_demo/ui/StateManagement.dart';
@@ -10,16 +11,25 @@ import 'package:provider/provider.dart';
 
 /// User interface
 
-// 위젯 사이징
+// 일반적인 위젯들
 void main() {
-  debugPaintSizeEnabled = true;
   runApp(
-    MaterialApp(
-      title: "위젯 크기",
-      home: SizingWidgetsDemo(),
+    const MaterialApp(
+      home: ContainerDemo(),
     ),
   );
 }
+
+// 위젯 사이징
+// void main() {
+//   debugPaintSizeEnabled = true;
+//   runApp(
+//     const MaterialApp(
+//       title: "위젯 크기",
+//       home: SizingWidgetsDemo(),
+//     ),
+//   );
+// }
 
 // non 머티리얼 앱
 // void main() {
