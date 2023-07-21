@@ -13,14 +13,23 @@ import 'package:provider/provider.dart';
 
 // 일반적인 위젯들
 
-// Stack
+// Card
 void main() {
   runApp(
     const MaterialApp(
-      home: StackDemo(),
+      home: CardDemo(),
     ),
   );
 }
+
+// Stack
+// void main() {
+//   runApp(
+//     const MaterialApp(
+//       home: StackDemo(),
+//     ),
+//   );
+// }
 
 // ListView
 // void main() {

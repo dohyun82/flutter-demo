@@ -2,6 +2,71 @@ import 'package:flutter/material.dart';
 
 /// 일반적인 레이아웃 위젯들
 
+/// Card
+/// 관련 정보 모음이 포함
+/// 기본 크기는 0,0
+/// 모서리가 둥글고 그림자 효과, 3D 효과
+/// elevation 속성
+/// 스크롤 불가
+/// 머티리얼 라이브러리
+class CardDemo extends StatelessWidget {
+  const CardDemo({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SafeArea(
+        child: _buildCard(),
+      ),
+    );
+  }
+
+  Widget _buildCard() {
+    return SizedBox(
+      height: 210,
+      child: Card(
+        child: Column(
+          children: [
+            ListTile(
+              title: const Text(
+                '제목',
+                style: TextStyle(
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+              subtitle: const Text('부제목'),
+              leading: Icon(
+                Icons.restaurant_menu,
+                color: Colors.blue[500],
+              ),
+            ),
+            const Divider(),
+            ListTile(
+              title: const Text(
+                '제목2',
+                style: TextStyle(
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+              leading: Icon(
+                Icons.contact_phone,
+                color: Colors.blue[500],
+              ),
+            ),
+            ListTile(
+              title: const Text('이메일'),
+              leading: Icon(
+                Icons.contact_mail,
+                color: Colors.blue[500],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
 /// Stack
 /// 기본 위젯과 겹치 도록 배치 가능
 /// 첫 위젯이 기본 위젯이고, 순차적으로 기본 위젯 위에 배치
