@@ -2,6 +2,48 @@ import 'package:flutter/material.dart';
 
 /// 일반적인 레이아웃 위젯들
 
+/// Stack
+/// 기본 위젯과 겹치 도록 배치 가능
+/// 첫 위젯이 기본 위젯이고, 순차적으로 기본 위젯 위에 배치
+/// 스크롤 불가
+class StackDemo extends StatelessWidget {
+  const StackDemo({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SafeArea(
+        child: _buildStack(),
+      ),
+    );
+  }
+
+  Widget _buildStack() {
+    return Stack(
+      alignment: const Alignment(0.6, 0.6),
+      children: [
+        const CircleAvatar(
+          backgroundImage: AssetImage('images/lake.jpeg'),
+          radius: 100,
+        ),
+        Container(
+          decoration: const BoxDecoration(
+            color: Colors.black45,
+          ),
+          child: const Text(
+            'Mia B',
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+}
+
 /// ListView
 /// Column 위젯과 비슷하지만 자동 스크롤링 기능 제공
 /// 수평/수직 가능
