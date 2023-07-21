@@ -12,13 +12,24 @@ import 'package:provider/provider.dart';
 /// User interface
 
 // 일반적인 위젯들
+
+// ListView
 void main() {
   runApp(
     const MaterialApp(
-      home: GridViewDemo(),
+      home: ListViewDemo(),
     ),
   );
 }
+
+// GridView
+// void main() {
+//   runApp(
+//     const MaterialApp(
+//       home: GridViewDemo(),
+//     ),
+//   );
+// }
 
 // Container
 // void main() {

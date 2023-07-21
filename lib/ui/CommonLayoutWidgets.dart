@@ -2,6 +2,59 @@ import 'package:flutter/material.dart';
 
 /// 일반적인 레이아웃 위젯들
 
+/// ListView
+/// Column 위젯과 비슷하지만 자동 스크롤링 기능 제공
+/// 수평/수직 가능
+class ListViewDemo extends StatelessWidget {
+  const ListViewDemo({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SafeArea(
+        child: _buildList(),
+      ),
+    );
+  }
+
+  Widget _buildList() {
+    return ListView(
+      children: [
+        _tile('제목1', '부제목1', Icons.theaters),
+        _tile('제목1', '부제목1', Icons.theaters),
+        _tile('제목1', '부제목1', Icons.theaters),
+        _tile('제목1', '부제목1', Icons.theaters),
+        _tile('제목1', '부제목1', Icons.theaters),
+        _tile('제목1', '부제목1', Icons.theaters),
+        _tile('제목1', '부제목1', Icons.theaters),
+        const Divider(),
+        _tile('제목1', '부제목1', Icons.restaurant),
+        _tile('제목1', '부제목1', Icons.restaurant),
+        _tile('제목1', '부제목1', Icons.restaurant),
+        _tile('제목1', '부제목1', Icons.restaurant),
+        _tile('제목1', '부제목1', Icons.restaurant),
+      ],
+    );
+  }
+
+  ListTile _tile(String title, String subTitle, IconData icon) {
+    return ListTile(
+      title: Text(
+        title,
+        style: const TextStyle(
+          fontWeight: FontWeight.w500,
+          fontSize: 20,
+        ),
+      ),
+      subtitle: Text(subTitle),
+      leading: Icon(
+        icon,
+        color: Colors.blue[500],
+      ),
+    );
+  }
+}
+
 /// GridView
 /// 그리드에 위젯 배치
 /// 수직이 랜더 박스를 초과하면 자동 스크롤링
