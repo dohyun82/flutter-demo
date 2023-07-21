@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_demo/ui/AdvancedUI.dart';
 import 'package:flutter_demo/ui/BuildingLayouts.dart';
+import 'package:flutter_demo/ui/BuildingLayoutsConstraints.dart';
 import 'package:flutter_demo/ui/BuildingLayoutsTutorial.dart';
 import 'package:flutter_demo/ui/CommonLayoutWidgets.dart';
 import 'package:flutter_demo/ui/JsonSerialization.dart';
@@ -11,14 +12,17 @@ import 'package:provider/provider.dart';
 
 /// User interface
 
+// Constraints 예제
+void main() => runApp(const HomePage());
+
 // 튜토리얼
-void main() {
-  runApp(
-    const MaterialApp(
-      home: TutorialHome(),
-    ),
-  );
-}
+// void main() {
+//   runApp(
+//     const MaterialApp(
+//       home: TutorialHome(),
+//     ),
+//   );
+// }
 
 // 일반적인 위젯들
 
