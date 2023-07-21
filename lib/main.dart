@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_demo/ui/AdvancedUI.dart';
 import 'package:flutter_demo/ui/BuildingLayouts.dart';
+import 'package:flutter_demo/ui/BuildingLayoutsTutorial.dart';
 import 'package:flutter_demo/ui/CommonLayoutWidgets.dart';
-import 'package:flutter_demo/ui/IntroductionToWidgets.dart';
 import 'package:flutter_demo/ui/JsonSerialization.dart';
 import 'package:flutter_demo/ui/StateManagement.dart';
 import 'package:go_router/go_router.dart';
@@ -11,16 +11,25 @@ import 'package:provider/provider.dart';
 
 /// User interface
 
-// 일반적인 위젯들
-
-// Card
+// 튜토리얼
 void main() {
   runApp(
     const MaterialApp(
-      home: CardDemo(),
+      home: TutorialHome(),
     ),
   );
 }
+
+// 일반적인 위젯들
+
+// Card
+// void main() {
+//   runApp(
+//     const MaterialApp(
+//       home: CardDemo(),
+//     ),
+//   );
+// }
 
 // Stack
 // void main() {
