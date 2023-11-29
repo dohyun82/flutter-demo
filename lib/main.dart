@@ -1,78 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/ui/AdvancedUI.dart';
-import 'package:flutter_demo/ui/JsonSerialization.dart';
-import 'package:flutter_demo/ui/StateManagement.dart';
-import 'package:go_router/go_router.dart';
-import 'package:provider/provider.dart';
+import 'package:flutter_demo/ui/Introduction.dart';
 
-/// Introduction to widgets
-// void main() {
-//   // runApp 함수 호출(Root Widget 포함)
-//   runApp(
-//     const MaterialApp(
-//       title: 'Shopping App',
-//       home: ShoppingList(
-//         products: [
-//           Product(name: 'Eggs'),
-//           Product(name: 'Flour'),
-//           Product(name: 'Chocolate chips'),
-//         ],
-//       ),
-//     ),
-//   );
-// }
+/// User interface
 
-/// Tutorial
-// void main() => runApp(MyApp());
-
-/// Introduction to animations
-// void main() {
-//   runApp(
-//     const MaterialApp(
-//       title: 'Animation',
-//       home: AnimatedContainerDemo(),
-//     ),
-//   );
-// }
-
-/// Navigation and routing
-// void main() {
-// runApp(MaterialApp(
-//   title: 'Navigation & Routing',
-//   home: NavigationDemo(),
-//   routes: {
-//     '/': (context) => NavigationDemo(),
-//     '/details': (context) => SongScreen()
-//   },
-// ));
-// }
-
-/// State Management
-// void main() {
-//   runApp(
-//     const MaterialApp(
-//       title: "상태관리",
-//       home: MyApp(),
-//     ),
-//   );
-// }
-
-/// JSON and serialization
-// void main() {
-//   runApp(
-//     const MaterialApp(
-//       title: "JSON Serialization",
-//       home: MyJsonDemo(),
-//     ),
-//   );
-// }
-
-/// Advanced UI
 void main() {
   runApp(
     const MaterialApp(
-      title: "Advanced UI",
-      home: MyAdvancedUIDemo(),
+      title: 'Shopping App',
+      home: ShoppingList(
+        products: [
+          Product(name: 'Eggs'),
+          Product(name: 'Flour'),
+          Product(name: 'Chocolate chips'),
+        ],
+      ),
     ),
   );
 }
