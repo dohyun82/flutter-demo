@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
-
-import 'ui/MyVideoPlayerDemoApp.dart';
-
-/// User interface
+import 'package:flutter_demo/ui/ImagePickerDemo.dart';
 
 void main() {
   runApp(
     const MaterialApp(
-      home: MyVideoPlayerDemoApp(),
+      home: ImagePickerDemoApp(),
     ),
   );
 }
