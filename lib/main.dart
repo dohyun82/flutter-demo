@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/ui/ImagePickerDemo.dart';
+import 'package:flutter_demo/ui/ImageCropperDemo.dart';
 
 void main() {
   runApp(
     const MaterialApp(
-      home: ImagePickerDemoApp(),
+      home: MyImageCropperDemoApp(),
     ),
   );
 }
