@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/ui/ImageCropperDemo.dart';
+import 'package:flutter/rendering.dart';
+import 'package:flutter_demo/ui/LayoutsInFlutter.dart';
 
 void main() {
-  runApp(
-    const MaterialApp(
-      home: MyImageCropperDemoApp(),
-    ),
-  );
+  debugPaintSizeEnabled = true;
+  runApp(MyMultipleLayoutDemo());
 }
