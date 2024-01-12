@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter_demo/ui/LayoutsInFlutter.dart';
+import 'package:flutter_demo/ui/ChartDemo.dart';
 
 void main() {
-  debugPaintSizeEnabled = true;
-  runApp(MyMultipleLayoutDemo());
+  runApp(
+    const MaterialApp(
+      home: ChartDemo(),
+    ),
+  );
 }
