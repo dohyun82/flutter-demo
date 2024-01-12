@@ -1,10 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/ui/ChartDemo.dart';
+import 'package:flutter_demo/ui/BuildLayout.dart';
 
-void main() {
-  runApp(
-    const MaterialApp(
-      home: ChartDemo(),
-    ),
-  );
-}
+void main() => runApp(const BuildLayoutApp());
