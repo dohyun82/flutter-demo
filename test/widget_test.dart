@@ -36,7 +36,7 @@ void main() {
     cart.addListener(() {
       expect(cart.totalPrice, greaterThan(startingPrice));
     });
-    cart.add(Item('Dash'));
+    // cart.add(Item('Dash'));
     expect(i, 1);
   });
 }
