@@ -6,10 +6,8 @@
 // tree, read text, and verify that the values of widget properties are correct.
 
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/ui/StateManagement.dart';
+import 'package:flutter_demo/model/StateManagementDemo.dart';
 import 'package:flutter_test/flutter_test.dart';
-
-import 'package:flutter_demo/main.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
@@ -35,8 +33,9 @@ void main() {
     var i = 0;
     cart.addListener(() {
       expect(cart.totalPrice, greaterThan(startingPrice));
+      i++;
     });
-    // cart.add(Item('Dash'));
+    cart.add(const Item(name: 'Dash'));
     expect(i, 1);
   });
 }
